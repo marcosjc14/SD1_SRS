@@ -1,15 +1,27 @@
-Include a header paragraph specific to your product here. Performance requirements address items such as: how fast specific critical operations must complete; how long it takes to start/stop activities; how long the battery must last; maximum time it must take to set up; etc.
+This section will provide performance requirements to maximize the quality of beer that is produced through this project. The performance requirements are response time of micro-controllers, sufficient power supply
 
-
-
-\subsection{Requirement Name}
+\subsection{Response time of micro-controllers}
 \subsubsection{Description}
-Detailed requirement description...
+Since the micro-controller using for the brewing system needs to read data from several thermometers in tanks and communicate with a web server to provide a monitoring system, and control pumps, at least ESP32 or higher spec is required. The micro-controller has to follow a specific recipe including the temperature of the hot liquor tank and the mash tun, and time for brewing, etc.  Fast response time is necessary to take instance reaction based on data read from the brewing equipment, manage communication with web server, and an internet connection.
 \subsubsection{Source}
 Source
 \subsubsection{Constraints}
-Detailed description of applicable constraints...
+A monitor connected to ESP32 or higher spec micro-controllers is required for many purposes such as developing software, take immediate action if needed, etc.
 \subsubsection{Standards}
-List of applicable standards
+Non-applicable.
 \subsubsection{Priority}
-Priority
+Top-priority should be given as this is core equipment out of entire system.
+\newline
+
+\subsection{sufficient power supply}
+
+\subsubsection{Description}
+The time it takes to produce beer to go from raw materials to finished, ready-to-drink beer depends on a number of different factors; however, the typical Light Ales like Cream Ale and Honey Kolsch take a minimum of one week. Other drinks such as Amber Ales, Dark Ales, Light Lagers, and Dark Lagers take much longer to make. While brewing, the equipment has to stay up and keeps exchanging data between a web server. A sufficient power supply is required to keep the equipment and the micro-controller running.
+\subsubsection{Source}
+Basic electrical hazards and safety measures
+\subsubsection{Constraints}
+Constant checking for electricity is required to prevent any issue related to electricity. 
+\subsubsection{Standards}
+Non-applicable.
+\subsubsection{Priority}
+Top-priority should be given.
